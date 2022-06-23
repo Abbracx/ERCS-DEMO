@@ -1,12 +1,52 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/Contract.sol": {
-      "lastModificationDate": 1655988606264,
-      "contentHash": "31f0fc4f0f3bd40993d7ae0c3d361556",
-      "sourceName": "src/solidity/contracts/Contract.sol",
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/access/AccessControl.sol": {
+      "lastModificationDate": 1655989519879,
+      "contentHash": "8e019a32b920e881f38f31cf60dd42cb",
+      "sourceName": "src/solidity/contracts/openzeppelin/access/AccessControl.sol",
       "solcConfig": {
-        "version": "0.8.3",
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/access/IAccessControl.sol": {
+      "lastModificationDate": 1655989519900,
+      "contentHash": "57c84298234411cea19c7c284d86be8b",
+      "sourceName": "src/solidity/contracts/openzeppelin/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.4",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -30,10 +70,5633 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.3"
+        "^0.8.0"
       ],
       "artifacts": [
-        "Contract"
+        "IAccessControl"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Context.sol": {
+      "lastModificationDate": 1655989520802,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Strings.sol": {
+      "lastModificationDate": 1655989520837,
+      "contentHash": "9ba0bb93454a1ab7b6824f59ead41f42",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1655989520889,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1655989520906,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/TimelockController.sol": {
+      "lastModificationDate": 1655990048285,
+      "contentHash": "569b38a266b92ed74bfaa4e35426e0d5",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/TimelockController.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../token/ERC721/IERC721Receiver.sol",
+        "../token/ERC1155/IERC1155Receiver.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TimelockController"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1655989520610,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/IERC1155Receiver.sol": {
+      "lastModificationDate": 1655989520303,
+      "contentHash": "9f8822b72fe2702979e40160cb6d9636",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155Receiver"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Address.sol": {
+      "lastModificationDate": 1655989520775,
+      "contentHash": "0bcfef2c416e2126ac93cd25c05f8c62",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Multicall.sol": {
+      "lastModificationDate": 1655989520821,
+      "contentHash": "8a997d859de7e871118021136bb5094e",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Multicall.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/cryptography/SignatureChecker.sol": {
+      "lastModificationDate": 1655989520864,
+      "contentHash": "a6c043c18ceaf0499c284c8b65b313f4",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/cryptography/SignatureChecker.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol",
+        "../Address.sol",
+        "../../interfaces/IERC1271.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignatureChecker"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1655989520853,
+      "contentHash": "4ca906243606c2545cd89d150afc541d",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1271.sol": {
+      "lastModificationDate": 1655989519987,
+      "contentHash": "8fe867b95c856b204f954a1910e28a1e",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1271.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1271"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/draft-ERC20Permit.sol": {
+      "lastModificationDate": 1655989520563,
+      "contentHash": "3c98f8ccc741d97ece615ce32d638d4c",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/draft-ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./draft-IERC20Permit.sol",
+        "../ERC20.sol",
+        "../../../utils/cryptography/draft-EIP712.sol",
+        "../../../utils/cryptography/ECDSA.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/draft-IERC20Permit.sol": {
+      "lastModificationDate": 1655989520566,
+      "contentHash": "fb77f144244b9ab12533aa6ce85ef8c5",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1655989520404,
+      "contentHash": "2ed98edc0ace098ba6d7c42a965628fd",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/cryptography/draft-EIP712.sol": {
+      "lastModificationDate": 1655989520868,
+      "contentHash": "161aae4dc1450371d0f324488f66a9cf",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/cryptography/draft-EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Counters.sol": {
+      "lastModificationDate": 1655989520814,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1655989520411,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1655989520554,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1655989520684,
+      "contentHash": "27d2c7c209f2fae42c6b90832f2669aa",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../extensions/ERC721Enumerable.sol",
+        "../extensions/ERC721Burnable.sol",
+        "../extensions/ERC721Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoId"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1655989520600,
+      "contentHash": "91523426b4187e051d6dfd6916690358",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1655989520625,
+      "contentHash": "88095889e59d16821879a8083f906503",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Burnable.sol": {
+      "lastModificationDate": 1655989520619,
+      "contentHash": "0ab632930859d5d5defd725aa04f2329",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Pausable.sol": {
+      "lastModificationDate": 1655989520628,
+      "contentHash": "2bc2d361b7e7bda979021da66e1696af",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Pausable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/access/AccessControlEnumerable.sol": {
+      "lastModificationDate": 1655989519894,
+      "contentHash": "b6d9b165dc57e9ad8153bdca05c783a4",
+      "sourceName": "src/solidity/contracts/openzeppelin/access/AccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControlEnumerable.sol",
+        "./AccessControl.sol",
+        "../utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlEnumerable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1655989520604,
+      "contentHash": "1551e6cba65c061bb93d057a5f000fd7",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1655989520671,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1655989520641,
+      "contentHash": "f4dd06783f321aa26179bc2b6e361c29",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/security/Pausable.sol": {
+      "lastModificationDate": 1655989520206,
+      "contentHash": "d724f5d2ff0c2d7e4fd0916f7d27503b",
+      "sourceName": "src/solidity/contracts/openzeppelin/security/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/access/IAccessControlEnumerable.sol": {
+      "lastModificationDate": 1655989519906,
+      "contentHash": "4e71cc90682e109e999ce2bd329f6572",
+      "sourceName": "src/solidity/contracts/openzeppelin/access/IAccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControlEnumerable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/structs/EnumerableSet.sol": {
+      "lastModificationDate": 1655989520970,
+      "contentHash": "82aa037594b58bd81f1c135656ed7be3",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1655989520695,
+      "contentHash": "c28085e30a1b30c2a5a494d14bbf718a",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../ERC20/IERC20.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1655989520699,
+      "contentHash": "840fa65314c73b948a5923169daa8cdc",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1655989520703,
+      "contentHash": "268af1696d7a83a7e78a1a8f5ba1c685",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1655989520710,
+      "contentHash": "7c1ce5bc5bc5f57fe7106ba767063e08",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1655989520914,
+      "contentHash": "b6d012794ce0d001210e52233bf439fc",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC777/presets/ERC777PresetFixedSupply.sol": {
+      "lastModificationDate": 1655989520722,
+      "contentHash": "cf632c608a0fc89ebfcd9870cb7e6ca2",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC777/presets/ERC777PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777PresetFixedSupply"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1820Registry.sol": {
+      "lastModificationDate": 1655989520026,
+      "contentHash": "fee82324a47df8d208c5389f695afab9",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1655989520587,
+      "contentHash": "c8d23f989a220b92f272d749f312dee6",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../extensions/draft-IERC20Permit.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/utils/TokenTimelock.sol": {
+      "lastModificationDate": 1655989520591,
+      "contentHash": "5d2b54b53436cb1d51e9aed8f2b27982",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/utils/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TokenTimelock"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC4626.sol": {
+      "lastModificationDate": 1655989520548,
+      "contentHash": "83cc8b6867114d73650cc1578508e1e8",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC4626.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../utils/SafeERC20.sol",
+        "../../../interfaces/IERC4626.sol",
+        "../../../utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC4626"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC4626.sol": {
+      "lastModificationDate": 1655989520069,
+      "contentHash": "8003a272e1b93632c74e555aafbc6b04",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC4626.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/IERC20.sol",
+        "../token/ERC20/extensions/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC4626"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/math/Math.sol": {
+      "lastModificationDate": 1655989520919,
+      "contentHash": "635a86bce793e12df80ef42f0a4aa97c",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Arrays.sol": {
+      "lastModificationDate": 1655989520785,
+      "contentHash": "2bd89f9eb95c317b3b21cc83fde01a32",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Snapshot.sol": {
+      "lastModificationDate": 1655989520467,
+      "contentHash": "57b1ce9bb95794daf23e0464bf53fdb5",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Arrays.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Snapshot"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/presets/ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1655989520575,
+      "contentHash": "ca6cd8d752c4e75efa2a15734be0cb94",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../extensions/ERC20Burnable.sol",
+        "../extensions/ERC20Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauser"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Burnable.sol": {
+      "lastModificationDate": 1655989520425,
+      "contentHash": "a1c7f80ae26f5b2d7d563475627fbf25",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Pausable.sol": {
+      "lastModificationDate": 1655989520441,
+      "contentHash": "ab4babe7912604097ae769a62fa08506",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/presets/ERC1155PresetMinterPauser.sol": {
+      "lastModificationDate": 1655989520347,
+      "contentHash": "ce9333438d295d2c4bebc7951ad33d93",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/presets/ERC1155PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../extensions/ERC1155Burnable.sol",
+        "../extensions/ERC1155Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155PresetMinterPauser"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/ERC1155.sol": {
+      "lastModificationDate": 1655989520287,
+      "contentHash": "15ccda6d21b88263f551bb53188226c9",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/ERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol",
+        "./IERC1155Receiver.sol",
+        "./extensions/IERC1155MetadataURI.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155Burnable.sol": {
+      "lastModificationDate": 1655989520317,
+      "contentHash": "b1ee9d536ad9a3c9c7ff20879301bc7a",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Burnable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155Pausable.sol": {
+      "lastModificationDate": 1655989520326,
+      "contentHash": "8c76f015a31a093020b83ba53a33c84d",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Pausable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1655989520295,
+      "contentHash": "1467f47443f26a409b19a20edf870916",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/extensions/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1655989520337,
+      "contentHash": "9148c2e10c4efb12c71a7f080da5559b",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155MetadataURI"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1655989520636,
+      "contentHash": "46b4532708d71a33e26eb9f82c1cf1d3",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorage"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Royalty.sol": {
+      "lastModificationDate": 1655989520632,
+      "contentHash": "538c93f1c25e40421fbe0c2c820c2fbe",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/ERC721Royalty.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../common/ERC2981.sol",
+        "../../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Royalty"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/common/ERC2981.sol": {
+      "lastModificationDate": 1655989520729,
+      "contentHash": "af068ebd08715bf2a3e7cdbeb9d09cc8",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/common/ERC2981.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IERC2981.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC2981"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC2981.sol": {
+      "lastModificationDate": 1655989520045,
+      "contentHash": "608566bc5327454ba54e487e7c226ff6",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC2981.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC2981"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/introspection/ERC165Storage.sol": {
+      "lastModificationDate": 1655989520898,
+      "contentHash": "a391733d3f579314de328ba879bc4f2d",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/introspection/ERC165Storage.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Storage"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/utils/ERC1155Receiver.sol": {
+      "lastModificationDate": 1655989520385,
+      "contentHash": "55b180cf664783e9a2baac20e82683fb",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/utils/ERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155Receiver.sol",
+        "../../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Receiver"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155URIStorage.sol": {
+      "lastModificationDate": 1655989520333,
+      "contentHash": "6046dbdf9591874037a20159d431e11f",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../utils/Strings.sol",
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155URIStorage"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155Supply.sol": {
+      "lastModificationDate": 1655989520329,
+      "contentHash": "6a99607f60a77d468b7ed41303ea4a6c",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/extensions/ERC1155Supply.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Supply"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1655989520893,
+      "contentHash": "1abe3767b27223b96a265645cb2a56e3",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC721Metadata.sol": {
+      "lastModificationDate": 1655989520089,
+      "contentHash": "d228683ef3a0f519456720463403ced6",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/IERC721Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC721Enumerable.sol": {
+      "lastModificationDate": 1655989520082,
+      "contentHash": "ff727125a84ba8d0dd642f6ab0632435",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC721.sol": {
+      "lastModificationDate": 1655989520078,
+      "contentHash": "e6da7798a8c22c5043cc42d64a2a8f80",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC165.sol": {
+      "lastModificationDate": 1655989520011,
+      "contentHash": "ee9624272968c23d93d4c2e39f06e6e2",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1363.sol": {
+      "lastModificationDate": 1655989519994,
+      "contentHash": "acec8cadeb2b66b07429c854a788a555",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1363.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1363"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC20.sol": {
+      "lastModificationDate": 1655989520030,
+      "contentHash": "d151fbfe7939989b9acf22797b32058b",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1155.sol": {
+      "lastModificationDate": 1655989519968,
+      "contentHash": "f646f2b291e7c83dcc7f1c6c7d1ece30",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1655989519978,
+      "contentHash": "bc1c98271c8b14d98b8caf09250dd039",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/extensions/IERC1155MetadataURI.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1155Receiver.sol": {
+      "lastModificationDate": 1655989519982,
+      "contentHash": "a80dbc3947556c57c569cd81aa255f10",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/IERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/Governor.sol": {
+      "lastModificationDate": 1655990048257,
+      "contentHash": "863cde15ab3cb691c8a02ad36b823958",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/Governor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721Receiver.sol",
+        "../token/ERC1155/IERC1155Receiver.sol",
+        "../utils/cryptography/ECDSA.sol",
+        "../utils/cryptography/draft-EIP712.sol",
+        "../utils/introspection/ERC165.sol",
+        "../utils/math/SafeCast.sol",
+        "../utils/structs/DoubleEndedQueue.sol",
+        "../utils/Address.sol",
+        "../utils/Context.sol",
+        "../utils/Timers.sol",
+        "./IGovernor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Governor"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1655989520923,
+      "contentHash": "4765cc1eac0d84668d71c13cd8a164b7",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/structs/DoubleEndedQueue.sol": {
+      "lastModificationDate": 1655989520951,
+      "contentHash": "1252685551a5afdb6005499e0f549eff",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/structs/DoubleEndedQueue.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DoubleEndedQueue"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Timers.sol": {
+      "lastModificationDate": 1655989520844,
+      "contentHash": "ae135102abee8b2fc88eed09a40cdb4c",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Timers.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Timers"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/IGovernor.sol": {
+      "lastModificationDate": 1655990048271,
+      "contentHash": "f4e8cf13b24e2d8789244b1a404bcab3",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/IGovernor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IGovernor"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorVotesComp.sol": {
+      "lastModificationDate": 1655990048370,
+      "contentHash": "b5275e42abd62e4780bd73bc69492d33",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorVotesComp.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol",
+        "../../token/ERC20/extensions/ERC20VotesComp.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorVotesComp"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20VotesComp.sol": {
+      "lastModificationDate": 1655989520480,
+      "contentHash": "85de097d4da905cf320e89d73840291a",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20VotesComp.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Votes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20VotesComp"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Votes.sol": {
+      "lastModificationDate": 1655989520474,
+      "contentHash": "d750921452f3bf2ab170f55cf4f5dc71",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Votes.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./draft-ERC20Permit.sol",
+        "../../../utils/math/Math.sol",
+        "../../../governance/utils/IVotes.sol",
+        "../../../utils/math/SafeCast.sol",
+        "../../../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Votes"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/utils/IVotes.sol": {
+      "lastModificationDate": 1655990048386,
+      "contentHash": "a036d40989f21d08bb990e68d0088fa1",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/utils/IVotes.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IVotes"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Checkpoints.sol": {
+      "lastModificationDate": 1655989520798,
+      "contentHash": "6986896416b1f89cb9ddd3bafe0bf8d1",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Checkpoints.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Checkpoints"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/utils/Votes.sol": {
+      "lastModificationDate": 1655990048390,
+      "contentHash": "33fb580069b232a436ee825012df574d",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/utils/Votes.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "../../utils/Counters.sol",
+        "../../utils/Checkpoints.sol",
+        "../../utils/cryptography/draft-EIP712.sol",
+        "./IVotes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Votes"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/extensions/draft-ERC721Votes.sol": {
+      "lastModificationDate": 1655989520678,
+      "contentHash": "393b6576742f451e365d603310c83adf",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/extensions/draft-ERC721Votes.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../governance/utils/Votes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Votes"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorVotes.sol": {
+      "lastModificationDate": 1655990048366,
+      "contentHash": "d5ec18eb16b8452e749ee7d3aaa304b1",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorVotes.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol",
+        "../utils/IVotes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorVotes"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorVotesQuorumFraction.sol": {
+      "lastModificationDate": 1655990048374,
+      "contentHash": "b346cb21204465106e3d5ea7b6264ee9",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorVotesQuorumFraction.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GovernorVotes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorVotesQuorumFraction"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorTimelockCompound.sol": {
+      "lastModificationDate": 1655990048354,
+      "contentHash": "756c2fabb71e0805f8bf4464638b3034",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorTimelockCompound.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IGovernorTimelock.sol",
+        "../Governor.sol",
+        "../../utils/math/SafeCast.sol",
+        "../../vendor/compound/ICompoundTimelock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorTimelockCompound"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/IGovernorTimelock.sol": {
+      "lastModificationDate": 1655990048378,
+      "contentHash": "eebb17e144c4fd58549d815db19552da",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/IGovernorTimelock.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IGovernor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IGovernorTimelock"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/compound/ICompoundTimelock.sol": {
+      "lastModificationDate": 1655989919679,
+      "contentHash": "0aa957092da3c691ed6bf15e56aedc3b",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/compound/ICompoundTimelock.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ICompoundTimelock"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorTimelockControl.sol": {
+      "lastModificationDate": 1655990048359,
+      "contentHash": "d75bd1fe3635665c9468947aa4c13bd5",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorTimelockControl.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IGovernorTimelock.sol",
+        "../Governor.sol",
+        "../TimelockController.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorTimelockControl"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/compatibility/IGovernorCompatibilityBravo.sol": {
+      "lastModificationDate": 1655990048302,
+      "contentHash": "150a6426dc55ba789e76389d6893f908",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/compatibility/IGovernorCompatibilityBravo.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IGovernor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IGovernorCompatibilityBravo"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/compatibility/GovernorCompatibilityBravo.sol": {
+      "lastModificationDate": 1655990048295,
+      "contentHash": "bde5610ecd11f2f5930e70fda7c90165",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/compatibility/GovernorCompatibilityBravo.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Counters.sol",
+        "../../utils/math/SafeCast.sol",
+        "../extensions/IGovernorTimelock.sol",
+        "../Governor.sol",
+        "./IGovernorCompatibilityBravo.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorCompatibilityBravo"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorSettings.sol": {
+      "lastModificationDate": 1655990048338,
+      "contentHash": "2c6e87fa9b63c7ef8579eb4ae937d4c2",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorSettings.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorSettings"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorProposalThreshold.sol": {
+      "lastModificationDate": 1655990048334,
+      "contentHash": "badf0ac3dc5335b05d84dab6e58a9d6e",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorProposalThreshold.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorProposalThreshold"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorPreventLateQuorum.sol": {
+      "lastModificationDate": 1655990048330,
+      "contentHash": "8a5d8fa457b66fe4bacb1320a0a079b7",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorPreventLateQuorum.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol",
+        "../../utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorPreventLateQuorum"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/governance/extensions/GovernorCountingSimple.sol": {
+      "lastModificationDate": 1655990048318,
+      "contentHash": "02b1526768c0ab245c630eb5a6b160fc",
+      "sourceName": "src/solidity/contracts/openzeppelin/governance/extensions/GovernorCountingSimple.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorCountingSimple"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC721/utils/ERC721Holder.sol": {
+      "lastModificationDate": 1655989520692,
+      "contentHash": "54062ff887823a306b33ea6494a220bc",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC721/utils/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Holder"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC721Receiver.sol": {
+      "lastModificationDate": 1655989520093,
+      "contentHash": "04c99e0f7cc521daff42ecd8e8f14877",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC1155/utils/ERC1155Holder.sol": {
+      "lastModificationDate": 1655989520377,
+      "contentHash": "88079762e28b246888129028f757e047",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC1155/utils/ERC1155Holder.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Holder"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/structs/EnumerableMap.sol": {
+      "lastModificationDate": 1655989520965,
+      "contentHash": "d330e7349c3e3d68af8e31e5ae6983ac",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/structs/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/presets/ERC20PresetFixedSupply.sol": {
+      "lastModificationDate": 1655989520571,
+      "contentHash": "d4d35c0977f3c87ab399a75a45d6fc19",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/presets/ERC20PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../extensions/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetFixedSupply"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Wrapper.sol": {
+      "lastModificationDate": 1655989520533,
+      "contentHash": "681b2b596d6bace0deaa50655a1733ef",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Wrapper.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Wrapper"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20FlashMint.sol": {
+      "lastModificationDate": 1655989520434,
+      "contentHash": "0ef9a800c71dc5223aa8f88d480b97bf",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20FlashMint.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../interfaces/IERC3156FlashBorrower.sol",
+        "../../../interfaces/IERC3156FlashLender.sol",
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20FlashMint"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC3156FlashBorrower.sol": {
+      "lastModificationDate": 1655989520054,
+      "contentHash": "e1498aed869ba95a17212a514b084ceb",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC3156FlashBorrower.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashBorrower"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC3156FlashLender.sol": {
+      "lastModificationDate": 1655989520063,
+      "contentHash": "9e16b4d269b399e8ab6342e0cf8a2edd",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC3156FlashLender.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC3156FlashBorrower.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashLender"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC3156.sol": {
+      "lastModificationDate": 1655989520050,
+      "contentHash": "8a4addf833379ccc6911f847b308332f",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC3156.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC3156FlashBorrower.sol",
+        "./IERC3156FlashLender.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Capped.sol": {
+      "lastModificationDate": 1655989520429,
+      "contentHash": "da89e343119284763a5a135243cdb338",
+      "sourceName": "src/solidity/contracts/openzeppelin/token/ERC20/extensions/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC20Metadata.sol": {
+      "lastModificationDate": 1655989520038,
+      "contentHash": "5f6b568ff33d29c2a468a48e4d2bb0f4",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/draft-IERC2612.sol": {
+      "lastModificationDate": 1655989520118,
+      "contentHash": "ad2177bf228c4a10bd94423ed7b1c67a",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/draft-IERC2612.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/draft-IERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC2612"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC777Sender.sol": {
+      "lastModificationDate": 1655989520106,
+      "contentHash": "e573734b8269ff2e407c505ea6fa4474",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777Sender.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC777Recipient.sol": {
+      "lastModificationDate": 1655989520102,
+      "contentHash": "5cb82721cc0841a27ae151e7f7b268e1",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777Recipient.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC777.sol": {
+      "lastModificationDate": 1655989520098,
+      "contentHash": "6009e31d3e8cbdc6831fc5d43e99701c",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC777.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/access/Ownable.sol": {
+      "lastModificationDate": 1655989519911,
+      "contentHash": "d1ca0e010fbe72cf869af3855d460ae7",
+      "sourceName": "src/solidity/contracts/openzeppelin/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/escrow/Escrow.sol": {
+      "lastModificationDate": 1655989520880,
+      "contentHash": "d7f7d868fd967819be183738de4b93eb",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/escrow/Escrow.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../access/Ownable.sol",
+        "../Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Escrow"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/escrow/ConditionalEscrow.sol": {
+      "lastModificationDate": 1655989520877,
+      "contentHash": "ed8802b28f8eab3257dc05b5b09e5c5d",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/escrow/ConditionalEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrow"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/escrow/RefundEscrow.sol": {
+      "lastModificationDate": 1655989520884,
+      "contentHash": "aee62e265ecc9a3b5f03a79e34b89158",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/escrow/RefundEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RefundEscrow"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/security/PullPayment.sol": {
+      "lastModificationDate": 1655989520214,
+      "contentHash": "231ae8fe3c144904ef0959be43de6616",
+      "sourceName": "src/solidity/contracts/openzeppelin/security/PullPayment.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/escrow/Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PullPayment"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/polygon/CrossChainEnabledPolygonChild.sol": {
+      "lastModificationDate": 1655989826533,
+      "contentHash": "4d4a033aff8396c174c4162d59b1cb1a",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/polygon/CrossChainEnabledPolygonChild.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../CrossChainEnabled.sol",
+        "../../security/ReentrancyGuard.sol",
+        "../../utils/Address.sol",
+        "../../vendor/polygon/IFxMessageProcessor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CrossChainEnabledPolygonChild"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/CrossChainEnabled.sol": {
+      "lastModificationDate": 1655989826462,
+      "contentHash": "cdff8c7d7f4945a9c3e1832716edfeef",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/CrossChainEnabled.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CrossChainEnabled"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1655989520229,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "src/solidity/contracts/openzeppelin/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/polygon/IFxMessageProcessor.sol": {
+      "lastModificationDate": 1655989919698,
+      "contentHash": "708bc9315349e0b19949e5eefce243e9",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/polygon/IFxMessageProcessor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IFxMessageProcessor"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/errors.sol": {
+      "lastModificationDate": 1655989826497,
+      "contentHash": "6f0eb1ce3507339f0dbcee101521876b",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/errors.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/optimism/CrossChainEnabledOptimism.sol": {
+      "lastModificationDate": 1655989826519,
+      "contentHash": "959d4f0424508f757a3a2ad07bcd9dc0",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/optimism/CrossChainEnabledOptimism.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../CrossChainEnabled.sol",
+        "./LibOptimism.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CrossChainEnabledOptimism"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/optimism/LibOptimism.sol": {
+      "lastModificationDate": 1655989826525,
+      "contentHash": "2a2ffa181e1ed8a8f2737d24d4b21745",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/optimism/LibOptimism.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../vendor/optimism/ICrossDomainMessenger.sol",
+        "../errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "LibOptimism"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/optimism/ICrossDomainMessenger.sol": {
+      "lastModificationDate": 1655989919689,
+      "contentHash": "dbd555bcf18d405690d5d9766af03be2",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/optimism/ICrossDomainMessenger.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">0.5.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ICrossDomainMessenger"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/arbitrum/LibArbitrumL2.sol": {
+      "lastModificationDate": 1655989826493,
+      "contentHash": "77fef5886772b7af4f9026620fc7c633",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/arbitrum/LibArbitrumL2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../vendor/arbitrum/IArbSys.sol",
+        "../errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "LibArbitrumL2"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/arbitrum/IArbSys.sol": {
+      "lastModificationDate": 1655989919656,
+      "contentHash": "8c9cf0f036ddbc72199e06f366acab1e",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/arbitrum/IArbSys.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IArbSys"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/arbitrum/CrossChainEnabledArbitrumL2.sol": {
+      "lastModificationDate": 1655989826480,
+      "contentHash": "cb033bf34a199d0f69a1559e73625159",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/arbitrum/CrossChainEnabledArbitrumL2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../CrossChainEnabled.sol",
+        "./LibArbitrumL2.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CrossChainEnabledArbitrumL2"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/arbitrum/LibArbitrumL1.sol": {
+      "lastModificationDate": 1655989826484,
+      "contentHash": "b843b9f59d935b1f68005dbc96b4e759",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/arbitrum/LibArbitrumL1.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../vendor/arbitrum/IBridge.sol",
+        "../../vendor/arbitrum/IInbox.sol",
+        "../../vendor/arbitrum/IOutbox.sol",
+        "../errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "LibArbitrumL1"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/arbitrum/IBridge.sol": {
+      "lastModificationDate": 1655989919661,
+      "contentHash": "0d19344e6cbf5f0461c39ff9c0fe04f3",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/arbitrum/IBridge.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBridge"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/arbitrum/IInbox.sol": {
+      "lastModificationDate": 1655989919664,
+      "contentHash": "363dee5563a8ec21c45d0d3e287783a2",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/arbitrum/IInbox.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IMessageProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IInbox"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/arbitrum/IOutbox.sol": {
+      "lastModificationDate": 1655989919672,
+      "contentHash": "1162f1accaab6665595446a993ae89e1",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/arbitrum/IOutbox.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOutbox"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/arbitrum/IMessageProvider.sol": {
+      "lastModificationDate": 1655989919670,
+      "contentHash": "79a4e338093785694816c9fb7acb86f3",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/arbitrum/IMessageProvider.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IMessageProvider"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/arbitrum/CrossChainEnabledArbitrumL1.sol": {
+      "lastModificationDate": 1655989826479,
+      "contentHash": "8446af70d264b97098ad456c7818376a",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/arbitrum/CrossChainEnabledArbitrumL1.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../CrossChainEnabled.sol",
+        "./LibArbitrumL1.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CrossChainEnabledArbitrumL1"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/amb/LibAMB.sol": {
+      "lastModificationDate": 1655989826477,
+      "contentHash": "66ec20e38487045e001bca782d850411",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/amb/LibAMB.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../vendor/amb/IAMB.sol",
+        "../errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "LibAMB"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/vendor/amb/IAMB.sol": {
+      "lastModificationDate": 1655989919646,
+      "contentHash": "ded958860b2fd4572666d478ecf695c6",
+      "sourceName": "src/solidity/contracts/openzeppelin/vendor/amb/IAMB.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAMB"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/crosschain/amb/CrossChainEnabledAMB.sol": {
+      "lastModificationDate": 1655989826474,
+      "contentHash": "dfc01f6e0893ea64c764505e17bc4e8e",
+      "sourceName": "src/solidity/contracts/openzeppelin/crosschain/amb/CrossChainEnabledAMB.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../CrossChainEnabled.sol",
+        "./LibAMB.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CrossChainEnabledAMB"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/access/AccessControlCrossChain.sol": {
+      "lastModificationDate": 1655989519888,
+      "contentHash": "562db8d0df4d1a9a6c8a994a9b8c15c6",
+      "sourceName": "src/solidity/contracts/openzeppelin/access/AccessControlCrossChain.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AccessControl.sol",
+        "../crosschain/CrossChainEnabled.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "AccessControlCrossChain"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/draft-IERC1822.sol": {
+      "lastModificationDate": 1655989520114,
+      "contentHash": "2858d98e74e67987ec81b39605230b74",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/draft-IERC1822.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1822Proxiable"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1363Receiver.sol": {
+      "lastModificationDate": 1655989519997,
+      "contentHash": "81d82b92e32be3906f750c8aa081eb09",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1363Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1363Receiver"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1363Spender.sol": {
+      "lastModificationDate": 1655989520002,
+      "contentHash": "59232bcd69ecd60f9fdc41e435eff762",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1363Spender.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1363Spender"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/interfaces/IERC1820Implementer.sol": {
+      "lastModificationDate": 1655989520014,
+      "contentHash": "b78ff1b7467f49381ceffd0e1c86b821",
+      "sourceName": "src/solidity/contracts/openzeppelin/interfaces/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/introspection/IERC1820Implementer.sol": {
+      "lastModificationDate": 1655989520910,
+      "contentHash": "0612f1c8beee4b227de51b49174b9bc2",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/introspection/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Implementer"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/introspection/ERC1820Implementer.sol": {
+      "lastModificationDate": 1655989520901,
+      "contentHash": "267e2fa54d5923930fc121c178403487",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/introspection/ERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1820Implementer"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Base64.sol": {
+      "lastModificationDate": 1655989520795,
+      "contentHash": "55453df54c7f2ec389d98decb8a84ff5",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Base64.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Base64"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/Create2.sol": {
+      "lastModificationDate": 1655989520818,
+      "contentHash": "8ffd3291312641c8d81247ee5cbe85dd",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1655989520860,
+      "contentHash": "25cf4bc7f86a32af587e4f927cf61752",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1655989520927,
+      "contentHash": "2337f0279507b5edf14a07067adf0d05",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1655989520931,
+      "contentHash": "226875d0edb508420f74e7a1c2786ad8",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1655989520936,
+      "contentHash": "f7b3809e202b5547e9ddd97aaeb1d907",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/StorageSlot.sol": {
+      "lastModificationDate": 1655989520833,
+      "contentHash": "c9f7c6d2f963f3675e70a7298b3453bf",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/openzeppelin/utils/structs/BitMaps.sol": {
+      "lastModificationDate": 1655989520946,
+      "contentHash": "a4862458388199138bffd4fa18f6c8ba",
+      "sourceName": "src/solidity/contracts/openzeppelin/utils/structs/BitMaps.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BitMaps"
       ]
     }
   }

@@ -2,7 +2,7 @@ import React from 'react'
 import { AppBar, Toolbar } from '@mui/material';
 import { Box } from '@mui/system';
 import { CssBaseline, List, ListItemButton, ListItemText, Typography, Divider, Drawer} from "@mui/material";
-
+import ERC20App from './ERC20/ERC20App';
 
 
 function AppAuthenticated() {
@@ -46,7 +46,7 @@ function AppAuthenticated() {
         sx={{ flexGrow: 1, bgcolor: 'background.default', p:3}}
       >
           <Toolbar />
-          <h1>CONTENT</h1>
+          <ERC20App />
       </Box>
     </Box>
   );

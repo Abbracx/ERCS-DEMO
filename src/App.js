@@ -14,7 +14,7 @@ const App = () => {
 
       try { 
         await window.ethereum.send("eth_requestAccounts");
-        // window.web3 = new Web3(window.ethereum);
+        window.web3 = new Web3(window.ethereum);
       }catch(error){
         // if user refuses to connect, thrown error is handled here.
         setInstruction("wallet connection denied, reload the page to try again");

@@ -18,6 +18,7 @@ const ERC20App = () => {
 
 
     const onClickCreate = () => setMenu(Menu.Create);
+    
     return (
       <div>
         {menu !== Menu.Main && (

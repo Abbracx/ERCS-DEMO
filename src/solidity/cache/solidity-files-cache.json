@@ -5698,6 +5698,43 @@
       "artifacts": [
         "BitMaps"
       ]
+    },
+    "/Users/mac/Documents/ethereum-ercs/ercs-demo/src/solidity/contracts/ERC20Token.sol": {
+      "lastModificationDate": 1655991114622,
+      "contentHash": "5d8d5163fa8f9e9a77a2267a9056d7e9",
+      "sourceName": "src/solidity/contracts/ERC20Token.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./openzeppelin/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC20Token"
+      ]
     }
   }
 }
